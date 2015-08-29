@@ -6,15 +6,14 @@
  */
  
  (function(){
-	traversal_imgs();
+	 traversal_imgs();
 	 $(window).scroll(function(){
-	traversal_imgs();
+	     traversal_imgs();
 	 });
  })();
  
  function traversal_imgs(){
 	 $("img").each(function(){
-		 console.log("a");
 		 if(($(this).offset().top + $(window).height()/3) < ($(window).height() + $(window).scrollTop())){
 			 $(this).attr("src", $(this).data("src"));
 			
